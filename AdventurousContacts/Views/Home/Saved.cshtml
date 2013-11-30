@@ -1,0 +1,26 @@
+﻿@model ContactLab.Models.Contact
+
+@{
+    ViewBag.Title = "Saved";
+}
+
+<h2>Kontakt sparad</h2>
+
+<table>
+    <tr>
+        <td>Förnamn</td>
+        <td><strong>@Model.FirstName</strong></td>
+    </tr>
+    <tr>
+        <td>Efternamn</td>
+        <td><strong>@Model.LastName</strong></td>
+    </tr>
+    <tr>
+        <td>E-post</td>
+        <td><strong>@Model.EmailAddress</strong></td>
+    </tr>
+</table>
+
+<p>
+    @Html.ActionLink("Tillbaka", "Index")
+</p>
